@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./images/favicon_ico.png"
+      type="image/x-icon"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>Star Travel</title>
+  </head>
+  <body>
+    <!-- nav bar section starts here  -->
+    <section id="nav-bar">
+      <div class="logo">
+        <img src="./images/logo.png" alt="" />
+        <h2>Starfish</h2>
+      </div>
+
+      <div class="nav-list">
+        <ul>
+          <li><a href="#">Premium</a></li>
+          <li><a href="#">Log in</a></li>
+        </ul>
+        <input type="button" value="SIGN UP" />
+      </div>
+    </section>
+    <!-- nav bar section ends here  -->
+
+    <!-- Hero section starts here -->
+    <section id="hero">
+      <div class="hero-text">
+        <h1>Save up to 90% on flights</h1>
+
+        <p>
+          Smart alerts for amazing domestic and international flight deals,
+          <br />
+          personalized to your favourite airports
+        </p>
+
+        <div class="hero-submit">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email address"
+          />
+          <input type="button" value="GET STARTED" id="btn" />
+        </div>
+      </div>
+
+      <div class="black"></div>
+      <div class="pink"></div>
+      <div class="purple"></div>
+    </section>
+    <!-- Hero section ends here -->
+
+    <!-- Flights section starts here -->
+    <section id="flights">
+      <h4>Recent Flights</h4>
+
+      <a href="#">View more</a>
+
+      <div class="flight-list">
+        <div class="flight-contain">
+          <img src="./images/barcelona.jpeg" alt="" />
+
+          <div class="expire">
+            <img src="./images/alarm-clock.png" alt="" />
+            <h5>Expired</h5>
+          </div>
+
+          <h4>Barcelona, Spain</h4>
+
+          <div class="flight-text">
+            <div class="prices">
+              <div>
+                <div class="price">
+                  <p>$700</p>
+
+                  <input type="button" value="-50%" />
+                </div>
+                <div class="old-price">
+                  <p id="old">$1400</p>
+                </div>
+              </div>
+
+              <div>
+                <div class="short">
+                  <div>
+                    <p>SFO + BCN</p>
+                  </div>
+
+                  <div>
+                    <p>Direct</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flight-contain">
+          <img src="./images/paris.jpg" alt="" />
+
+          <div class="expire1">
+            <img src="./images/alarm-clock.png" alt="" />
+            <h5>Expired</h5>
+          </div>
+
+          <h4>Paris, France</h4>
+
+          <div class="flight-text">
+            <div class="prices">
+              <div>
+                <div class="price">
+                  <p>$450</p>
+
+                  <input type="button" value="-50%" />
+                </div>
+                <div class="old-price">
+                  <p id="old">$900</p>
+                </div>
+              </div>
+
+              <div>
+                <div class="short">
+                  <div>
+                    <p>SFO + CDG</p>
+                  </div>
+
+                  <div>
+                    <p>Direct</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flight-contain">
+          <img src="./images/wien,austria.jpeg" alt="" />
+
+          <div class="expire2">
+            <img src="./images/alarm-clock.png" alt="" />
+            <h5>Expired</h5>
+          </div>
+
+          <h4>Wien, Austria</h4>
+
+          <div class="flight-text">
+            <div class="prices">
+              <div>
+                <div class="price">
+                  <p>$450</p>
+
+                  <input type="button" value="-50%" />
+                </div>
+                <div class="old-price">
+                  <p id="old">$900</p>
+                </div>
+              </div>
+
+              <div>
+                <div class="short">
+                  <div>
+                    <p>SFO + VIE</p>
+                  </div>
+
+                  <div>
+                    <p>Direct</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flight-contain">
+          <img src="./images/paris.jpg" alt="" />
+
+          <div class="expire3">
+            <img src="./images/alarm-clock.png" alt="" />
+            <h5>Expired</h5>
+          </div>
+
+          <h4>Paris, France</h4>
+
+          <div class="flight-text">
+            <div class="prices">
+              <div>
+                <div class="price">
+                  <p>$450</p>
+
+                  <input type="button" value="-50%" />
+                </div>
+                <div class="old-price">
+                  <p id="old">$900</p>
+                </div>
+              </div>
+
+              <div>
+                <div class="short">
+                  <div>
+                    <p>SFO + CDG</p>
+                  </div>
+
+                  <div>
+                    <p>Direct</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Flights section ends here -->
+
+    <!-- Deals section starts here -->
+    <section id="deals">
+      <div class="pink"></div>
+      <h2>Find the world's best flight deals</h2>
+
+      <div class="black"></div>
+
+      <div class="deals">
+        <div class="deal-contain">
+          <img src="./images/piggy-bank.png" alt="" />
+
+          <div class="deal-text">
+            <h3>Save $450/ticket on average</h3>
+
+            <p>
+              We search billions of flights 24/7 to find the best deals for you
+            </p>
+          </div>
+        </div>
+
+        <div class="deal-contain">
+          <img src="./images/takeoff .png" alt="" />
+
+          <div class="deal-text">
+            <h3>Go domestic or international</h3>
+
+            <p>Take a jaunt to 5,000+ airports or go home to visit Mom</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="deals">
+        <div class="deal-contain">
+          <img src="./images/promotion tag.png" alt="" />
+
+          <div class="deal-text">
+            <h3>Quality deals</h3>
+
+            <p>Book directly with airlines or vetted travel services</p>
+          </div>
+        </div>
+
+        <div class="deal-contain">
+          <img src="./images/percentage.png" alt="" />
+
+          <div class="deal-text">
+            <h3>Let Starfish work for you</h3>
+
+            <p>
+              We are your travel agent - we'll alert you when we've found
+              something great
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="purple"></div>
+    </section>
+    <!-- Deals section ends here -->
+
+    <!-- Book section starts here -->
+    <section id="book">
+      <h2>Book now</h2>
+
+      <div class="book-contain">
+        <div class="book-text">
+          <div>1.</div>
+
+          <h3>Sign up for free in 30 seconds.</h3>
+
+          <p>
+            All we need is your email and location, and you'll immediately get
+            access to smarts flight alerts from your favorite airports.
+          </p>
+        </div>
+
+        <div class="book-img">
+          <img src="./images/sign up.svg" alt="">
+        </div>
+      </div>
+
+      <div class="book-contain">
+        <div class="book-img1">
+          <img src="./images/browse list.avif" alt="">
+        </div>
+
+        <div class="book-text">
+          <div>2.</div>
+
+          <h3>Browse your smart travel list.</h3>
+
+          <p>
+            Get immediate access to your choice and feed of the best opportunities you can get
+          </p>
+        </div>
+      </div>
+
+      <div class="book-contain">
+        <div class="book-text">
+          <div>3.</div>
+
+          <h3>Book with confidence.</h3>
+
+          <p>
+            You'll be able to book using either the official carrier or a trusted service vetted by our team.
+          </p>
+        </div>
+
+        <div class="book-img">
+          <img src="./images/booked.svg" alt="">
+        </div>
+      </div>
+    </section>
+    <!-- Book section ends here -->
+
+    <!-- Footer section starts here -->
+    <footer>
+      <div class="foot">
+        <h1>Try Starfish for Free</h1>
+
+        <p>
+          Less couch, more travel.
+        </p>
+
+        <div class="foot-submit">
+          <input
+            type="email"
+            name="email"
+            id="email-foot"
+            placeholder="Email address"
+          />
+          <input type="button" value="GET STARTED" id="btn1" />
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="foot-contain">
+        <div class="logo-foot">
+          <img src="./images/logo.png" alt="" />
+          <h2>Starfish</h2>
+        </div>
+
+        <div class="foot-social">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+        </div>
+  
+        <div class="foot-terms">
+          <a href="#">Legal</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+      
+    </footer>
+    <!-- Footer section ends here  -->
+  </body>
+</html>

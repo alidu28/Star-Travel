@@ -10,22 +10,587 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body{
     font-family: 'Roboto', sans-serif;
-    overflow-x: hidden;
+    
 }
 
-@media screen and (max-width: 1024px) {
+#nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+}
+
+#nav-bar .logo{
+    display: flex;
+    align-items: center;
+    box-shadow: 0 .3rem .3rem 0 rgb(145, 143, 143);
+}
+
+#nav-bar .logo h2{
+    margin-inline: .5rem;
+    font-size: 1.1rem;
+}
+
+#nav-bar .nav-list{
+    display: flex;
+    align-items: center;
+}
+
+#nav-bar .nav-list ul{
+    display: flex;
+    list-style-type: none;
+}
+
+#nav-bar .nav-list a{
+    text-decoration: none;
+    padding-inline: .6rem;
+    color: black;
+    font-size: .8rem;
+}
+
+#nav-bar .nav-list input{
+    padding: .5rem;
+    margin-left: .7rem;
+    font-size: .6rem;
+    font-weight: 600;
+    color: white;
+    background-color: var(--main-color);
+    border: var(--border);
+    border-radius: var(--border-radius);
+    width: 5.5rem;
+    box-shadow: 0 .3rem .3rem 0 rgb(198, 198, 198);
+}
+
+#hero{
+    background-color: rgb(227, 236, 241);
+    height: 80vh;
+}
+
+#hero .hero-text{
+    position: relative;
+    top: 40%;
+    left: 13%;
+}
+
+#hero .hero-text h1{
+    font-size: 2rem;
+    font-weight: 500;
+    word-spacing: .5rem;
+}
+
+#hero .hero-text p{
+    font-size: .8rem;
+    margin: .8rem 0;
+}
+
+#hero .hero-submit{
+    background-color: rgb(247, 246, 246);
+    width: 18.3rem;
+    height: fit-content;
+    border-radius: 1.7rem;
+    box-shadow: 0 .2rem .3rem 0 rgb(152, 151, 151);
+}
+
+#hero .hero-submit input{
+    padding: .5rem .3rem;
+    font-size: .6rem;
+    font-weight: 600;
+    border: transparent;
+    margin: .1rem 0 .1rem 1rem;
+}
+
+#btn{
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 1rem;
+    width: 7rem;
+    position: relative;
+    left: 6%;
+}
+
+#email{
+    background-color: rgb(247, 246, 246);
+}
+
+#hero .black{
+    background-color: black;
+    width: 1rem;
+    height: .9rem;
+    position: relative;
+    border-radius: 50%;
+    left: 4%;
+    top: 45%;
+    box-shadow: 0 .3rem .3rem 0 rgb(145, 143, 143);
+}
+
+#hero .pink{
+    background-color: var(--main-color);
+    width: 1.6rem;
+    height: 1.5rem;
+    position: relative;
+    border-radius: 50%;
+    left: 65%;
+    top: 10%;
+    box-shadow: 0 .3rem .3rem 0 rgb(145, 143, 143);
+}
+
+#hero .purple{
+    background-color: #3A41F5;
+    width: 2.2rem;
+    height: 2rem;
+    position: relative;
+    border-radius: 50%;
+    left: 82%;
+    bottom: 15%;
+    box-shadow: 0 .3rem .3rem 0 rgb(145, 143, 143);
+}
+
+#flights{
+    margin: 4rem 4rem 10rem 8.4rem;
+}
+
+#flights h4{
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+#flights a{
+    color: #0048ff;
+    text-decoration: none;
+    font-size: .6rem;
+}
+
+#flights .flight-list{
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+#flights .flight-contain{
+    height: fit-content;
+    width: fit-content;
+    margin: 1.5rem 1.5rem 0 0;
+}
+
+#flights .flight-contain .new{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+#flights .expire{
+    display: flex;
+    align-items: center;
+    background-color: #E4E1DE;
+    color: var(--main-color);
+    padding: .3rem .5rem;
+    width: fit-content;
+    border: transparent;
+    border-radius: 1rem;
+    position: absolute;
+}
+
+#flights .expire1{
+    display: flex;
+    align-items: center;
+    background-color: #E4E1DE;
+    color: var(--main-color);
+    padding: .3rem .5rem;
+    width: fit-content;
+    border: transparent;
+    border-radius: 1rem;
+    position: relative;
+}
+
+#flights .expire2{
+    display: flex;
+    align-items: center;
+    background-color: #E4E1DE;
+    color: var(--main-color);
+    padding: .3rem .5rem;
+    width: fit-content;
+    border: transparent;
+    border-radius: 1rem;
+    position: absolute;
+}
+
+#flights .expire3{
+    display: flex;
+    align-items: center;
+    background-color: #E4E1DE;
+    color: var(--main-color);
+    padding: .3rem .5rem;
+    width: fit-content;
+    border: transparent;
+    border-radius: 1rem;
+    position: absolute;
+}
+
+#flights .flight-contain .expire img{
+    width: 13px;
+    height: 13px;
+}
+
+#flights .flight-contain .expire1 img{
+    width: 13px;
+    height: 13px;
+}
+
+#flights .flight-contain .expire2 img{
+    width: 13px;
+    height: 13px;
+}
+
+#flights .flight-contain .expire3 img{
+    width: 13px;
+    height: 13px;
+}
+
+#flights .flight-contain .expire h5{
+    font-size: .5rem;
+    margin: 0 0 0 .2rem;
+}
+
+#flights .flight-contain .expire1 h5{
+    font-size: .5rem;
+    margin: 0 0 0 .2rem;
+}
+
+#flights .flight-contain .expire2 h5{
+    font-size: .5rem;
+    margin: 0 0 0 .2rem;
+}
+
+#flights .flight-contain .expire3 h5{
+    font-size: .5rem;
+    margin: 0 0 0 .2rem;
+}
+
+#flights .flight-contain img{
+    width: 200px;
+    height: 150px;
+}
+
+#flights .prices{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 .2rem;
+}
+
+#flights .price{
+    display: flex;
+    margin: .2rem 0 0 0;
+}
+
+#flights .price p{
+    color: var(--main-color);
+    font-size: .6rem;
+    font-weight: 400;
+}
+
+#flights .price input{
+    padding: .1rem;
+    width: 2rem;
+    font-size: .5rem;
+    font-weight: 400;
+    margin: 0 0 0 .2rem;
+    border: transparent;
+    border-radius: .5rem;
+    background-color: var(--main-color);
+    color: white;
+}
+
+#old{
+    color: #cbcbcb;
+    font-size: .6rem;
+    font-weight: 400;
+    text-decoration: line-through;
+    margin: .3rem 0 0 0;
+}
+
+#flights .short div{
+    width: fit-content;
+    height: fit-content;
+    padding: .1rem .4rem;
+    margin: 0 0 .2rem 0;
+    align-items: center;
+    background-color: FBFBFB;
+    border: 1px solid transparent;
+    border-radius: .7rem;
+    font-size: .55rem;
+    font-weight: 500;
+    box-shadow: 0 .3rem .3rem 0 rgb(217, 216, 216);
+}
+
+#deals{
+    margin: 13rem 0 9rem 0;
+}
+
+#deals h3{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0 0 .6rem 0;
+    letter-spacing: .1rem;
+}
+
+#deals .deals{
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0;
+   
+}
+
+#deals .deal-contain{
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    background-color: rgb(240, 240, 240);
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    margin: 0 .9rem;
+    box-shadow: 0 .3rem .3rem 0 rgb(145, 143, 143);
+}
+
+#deals .deal-contain img{
+    width: 50px;
+    height: 50px;
+}
+
+#deals .deal-text{
+    margin: 0 0 0 1.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+#deals .deal-text h3{
+    margin: .5rem 0 .5rem 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#deals .deal-text p{
+    width: 16rem;
+    font-size: .8rem;
+}
+
+#deals .black{
+    background-color: black;
+    width: .6rem;
+    height: .5rem;
+    position: relative;
+    border-radius: 50%;
+    left: 44%;
+    box-shadow: 0 .3rem .3rem 0 rgb(145, 143, 143);
+}
+
+#deals .pink{
+    background-color: var(--main-color);
+    width: .9rem;
+    height: .8rem;
+    position: relative;
+    border-radius: 50%;
+    left: 13%;
+    box-shadow: 0 .3rem .3rem 0 rgb(145, 143, 143);
+}
+
+#deals .purple{
+    background-color: #3A41F5;
+    width: 1.5rem;
+    height: 1.3rem;
+    position: absolute;
+    border-radius: 250%;
+    left: 2%;
+    top: 225%;
+    box-shadow: 0 .3rem .3rem 0 rgb(145, 143, 143);
+    z-index: -1;
+}
+
+#book{
+    margin: 3rem 0 0 0;
+}
+
+#book h2{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+}
+
+#book .book-contain{
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+}
+
+#book .book-contain .book-text{
+   margin: auto 3rem;
+}
+
+#book .book-contain .book-text div{
+    background-color: var(--main-color);
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    padding: .4rem;
+    border: transparent;
+    border-radius: .6rem;
+    margin: 0 0 .3rem 0;
+    font-size: .7rem;
+}
+
+#book .book-contain .book-text h3{
+    font-size: 1rem;
+    letter-spacing: .1rem;
+}
+
+#book .book-contain .book-text p{
+    width: 19rem;
+    margin: .4rem 0;
+    font-size: .8rem;
+}
+
+#book .book-contain .book-img img{
+    width: 300px;
+    height: 300px;
+}
+
+#book .book-contain .book-img1 img{
+    width: 300px;
+    height: 300px;
+}
+
+footer{
+    background-image: url(./images/dotted-world-map-black.avif);
+    background-size: cover;
+    color: rgb(225, 224, 224);
+    padding: 5rem 0 1.5rem 0;
+}
+
+footer .foot h2{
+    text-align: center;
+    padding: 2rem 0 .7rem 0;
+    letter-spacing: .1rem;
+    font-size: 1.5rem;
+}
+
+footer .foot p{
+    text-align: center;
+    font-size: .9rem;
+}
+
+footer .foot-submit{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    width: 26rem;
+    height: 2.6rem;
+    margin: 3rem auto;
+    border: 1px solid transparent;
+    border-radius: 15rem;
+    box-shadow: 0 0 0 .5rem rgba(80, 79, 79, 0.854);
+}
+
+footer .foot-submit input{
+    padding: 0 0 0 .5rem;
+    border: transparent;
+    font-size: .7rem;
+    letter-spacing: .1rem;
+    align-items: center;
+    border-radius: 2rem;
+    width: 7.2rem;
+    height: fit-content;
+}
+
+footer .foot-submit #btn1{
+    background-color: var(--main-color);
+    color: white;
+    padding: .7rem .8rem;
+    border: transparent;
+    border-radius: 3rem;
+    width: 8rem;
+    height: fit-content;
+    font-size: .55rem;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    margin: 0 0 0 10.3rem;
+}
+
+hr{
+    margin: 16rem auto 1.5rem auto;
+    width: 60rem;
+    height: .1px;
+    background-color: rgb(115, 115, 115);
+    border: transparent;
+}
+
+footer .foot-contain{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer .logo-foot{
+    display: flex;
+    align-items: center;
+    box-shadow: 0 .3rem .3rem 0 rgb(59, 59, 59);
+}
+
+.foot-social{
+    margin: 0 0 0 4.5rem;
+}
+
+.foot-social i{
+    padding: .5rem;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    background-color: rgb(58, 56, 56);
+    width: 3rem;
+    text-align: center;
+    margin:  0 .4rem;
+    font-size: .9rem;
+}
+
+footer .logo-foot h2{
+    margin: 0 0 0 .6rem;
+    font-size: 1.2rem;
+}
+
+footer .foot-terms a{
+    text-decoration: none;
+    color: white;
+    margin-inline: 1rem;
+    font-size: .8rem;
+}
+
+
+@media only screen and (min-width: 1281px){
+
     #nav-bar{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 2rem;
+        padding: 1rem 2rem;
         z-index: 2;
         position: fixed;
         width: 100%;
+        background: transparent;
+        backdrop-filter: blur(20px);
     }
     
     #nav-bar .logo{
@@ -36,7 +601,7 @@ body{
     
     #nav-bar .logo h2{
         margin-inline: .5rem;
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
     
     #nav-bar .nav-list{
@@ -53,71 +618,639 @@ body{
         text-decoration: none;
         padding-inline: .6rem;
         color: black;
-        font-size: .8rem;
+        font-size: 1.1rem;
     }
     
     #nav-bar .nav-list input{
-        padding: .5rem;
-        margin-left: .7rem;
-        font-size: .6rem;
+        padding: .5rem .8rem;
+        margin: 0 0 .4rem .7rem;
+        font-size: .85rem;
         font-weight: 600;
         color: white;
         background-color: var(--main-color);
         border: var(--border);
         border-radius: var(--border-radius);
-        width: 5.5rem;
+        width: 6.5rem;
         box-shadow: 0 .3rem .3rem 0 rgb(198, 198, 198);
     }
     
     #hero{
         background-color: rgb(227, 236, 241);
-        height: 80vh;
+        height: 100vh;
     }
     
     #hero .hero-text{
         position: relative;
         top: 40%;
-        left: 13%;
+        left: 11%;
     }
     
     #hero .hero-text h1{
-        font-size: 2rem;
+        font-size: 3rem;
         font-weight: 500;
         word-spacing: .5rem;
     }
     
     #hero .hero-text p{
-        font-size: .8rem;
+        font-size: 1.1rem;
         margin: .8rem 0;
     }
     
     #hero .hero-submit{
         background-color: rgb(247, 246, 246);
-        width: 18.3rem;
+        width: 25rem;
         height: fit-content;
-        border-radius: 1.7rem;
+        border-radius: 2rem;
         box-shadow: 0 .2rem .3rem 0 rgb(152, 151, 151);
+        margin: 1.4rem 0 .9rem .3rem;
     }
     
     #hero .hero-submit input{
-        padding: .5rem .3rem;
-        font-size: .6rem;
-        font-weight: 600;
+        font-size: .82rem;
+        font-weight: 500;
         border: transparent;
-        margin: .1rem 0 .1rem 1rem;
+        border-radius: 2rem;
+        width: 7rem;
     }
     
-    #btn{
+    #hero .hero-submit #btn{
         background-color: var(--main-color);
         color: white;
-        border-radius: 1rem;
-        width: 7rem;
+        font-size: .72rem;
+        font-weight: 600;
+        padding: .8rem .3rem;
+        left: 24%;
+        margin: .2rem 0 .2rem 2rem;
+        border-radius: 2rem;
+        width: 8.5rem;
         position: relative;
-        left: 6%;
     }
     
-    #email{
+    #hero .black{
+        background-color: black;
+        width: 1rem;
+        height: .9rem;
+        position: relative;
+        border-radius: 50%;
+        left: 4%;
+        top: 45%;
+        box-shadow: 0 .3rem .3rem 0 rgb(145, 143, 143);
+    }
+    
+    #hero .pink{
+        background-color: var(--main-color);
+        width: 1.6rem;
+        height: 1.5rem;
+        position: relative;
+        border-radius: 50%;
+        left: 69%;
+        top: 6%;
+        box-shadow: 0 .3rem .3rem 0 rgb(145, 143, 143);
+    }
+    
+    #hero .purple{
+        background-color: #3A41F5;
+        width: 2.2rem;
+        height: 2rem;
+        position: relative;
+        border-radius: 50%;
+        left: 83%;
+        bottom: 19%;
+        box-shadow: 0 .3rem .3rem 0 rgb(145, 143, 143);
+    }
+    
+    #flights{
+        margin: 5rem 5rem 10rem 8.4rem;
+    }
+    
+    #flights h4{
+        font-size: 1.1rem;
+        font-weight: 500;
+        margin: .3rem 0 0 0;
+    }
+    
+    #flights a{
+        color: #0048ff;
+        text-decoration: none;
+        font-size: .8rem;
+    }
+    
+    #flights .flight-list{
+        display: flex;
+    }
+    
+    #flights .flight-contain{
+        height: fit-content;
+        width: fit-content;
+        margin: 1.5rem 1.5rem 0 0;
+    }
+    
+    #flights .flight-contain .new{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 255px;
+        height: 190px;
+    }
+    
+    #flights .expire{
+        display: flex;
+        align-items: center;
+        background-color: #E4E1DE;
+        color: var(--main-color);
+        padding: .3rem .5rem;
+        width: fit-content;
+        border: transparent;
+        border-radius: 1rem;
+        position: absolute;
+    }
+    
+    #flights .expire1{
+        display: flex;
+        align-items: center;
+        background-color: #E4E1DE;
+        color: var(--main-color);
+        padding: .3rem .5rem;
+        width: fit-content;
+        border: transparent;
+        border-radius: 1rem;
+        position: relative;
+    }
+    
+    #flights .expire2{
+        display: flex;
+        align-items: center;
+        background-color: #E4E1DE;
+        color: var(--main-color);
+        padding: .3rem .5rem;
+        width: fit-content;
+        border: transparent;
+        border-radius: 1rem;
+        position: absolute;
+    }
+    
+    #flights .expire3{
+        display: flex;
+        align-items: center;
+        background-color: #E4E1DE;
+        color: var(--main-color);
+        padding: .3rem .5rem;
+        width: fit-content;
+        border: transparent;
+        border-radius: 1rem;
+        position: absolute;
+    }
+    
+    #flights .flight-contain .expire img{
+        width: 18px;
+        height: 18px;
+    }
+    
+    #flights .flight-contain .expire1 img{
+        width: 18px;
+        height: 18px;
+    }
+    
+    #flights .flight-contain .expire2 img{
+        width: 18px;
+        height: 18px;
+    }
+    
+    #flights .flight-contain .expire3 img{
+        width: 18px;
+        height: 18px;
+    }
+    
+    #flights .flight-contain .expire h5{
+        font-size: .72rem;
+        margin: 0 0 0 .2rem;
+    }
+    
+    #flights .flight-contain .expire1 h5{
+        font-size: .72rem;
+        margin: 0 0 0 .2rem;
+    }
+    
+    #flights .flight-contain .expire2 h5{
+        font-size: .72rem;
+        margin: 0 0 0 .2rem;
+    }
+    
+    #flights .flight-contain .expire3 h5{
+        font-size: .72rem;
+        margin: 0 0 0 .2rem;
+    }
+    
+    #flights .flight-contain img{
+        width: 255px;
+        height: 190px;
+    }
+    
+    #flights .prices{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 .2rem;
+    }
+    
+    #flights .price{
+        display: flex;
+        margin: .7rem 0 0 0;
+    }
+    
+    #flights .price p{
+        color: var(--main-color);
+        font-size: .8rem;
+        font-weight: 400;
+    }
+    
+    #flights .price input{
+        padding: .1rem;
+        width: 2.2rem;
+        font-size: .6rem;
+        font-weight: 400;
+        margin: 0 0 0 .2rem;
+        border: transparent;
+        border-radius: .5rem;
+        background-color: var(--main-color);
+        color: white;
+    }
+    
+    #old{
+        color: #cbcbcb;
+        font-size: .8rem;
+        font-weight: 400;
+        text-decoration: line-through;
+        margin: .3rem 0 0 0;
+    }
+    
+    #flights .short div{
+        width: fit-content;
+        height: fit-content;
+        padding: .1rem .4rem;
+        margin: .3rem 0 .2rem 0;
+        align-items: center;
+        background-color: FBFBFB;
+        border: 1px solid transparent;
+        border-radius: .7rem;
+        font-size: .65rem;
+        font-weight: 500;
+        box-shadow: 0 .3rem .3rem 0 rgb(217, 216, 216);
+    }
+    
+    #deals{
+        margin: 13rem 0 9rem 0;
+    }
+    
+    #deals h3{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin: 0 0 .6rem 0;
+        letter-spacing: .1rem;
+    }
+    
+    #deals .deals{
+        display: flex;
+        justify-content: center;
+        margin: 1.5rem 0;
+       
+    }
+    
+    #deals .deal-contain{
+        display: flex;
+        padding: 3rem;
+        align-items: center;
+        background-color: rgb(240, 240, 240);
+        width: fit-content;
+        height: fit-content;
+        border: 1px solid transparent;
+        border-radius: 1rem;
+        margin: .5rem .9rem;
+        box-shadow: 0 .3rem .3rem 0 rgb(145, 143, 143);
+    }
+    
+    #deals .deal-contain img{
+        width: 80px;
+        height: 80px;
+    }
+    
+    #deals .deal-text{
+        margin: 0 0 0 1.9rem;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+    
+    #deals .deal-text h3{
+        margin: .5rem 0 .5rem 0;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    
+    #deals .deal-text p{
+        width: 18rem;
+        font-size: 1rem;
+    }
+    
+    #deals .black{
+        background-color: black;
+        width: .6rem;
+        height: .5rem;
+        position: relative;
+        border-radius: 50%;
+        left: 44%;
+        box-shadow: 0 .3rem .3rem 0 rgb(145, 143, 143);
+    }
+    
+    #deals .pink{
+        background-color: var(--main-color);
+        width: 1.1rem;
+        height: 1rem;
+        position: relative;
+        border-radius: 50%;
+        left: 13%;
+        box-shadow: 0 .3rem .3rem 0 rgb(145, 143, 143);
+    }
+    
+    #deals .purple{
+        background-color: #3A41F5;
+        width: 2rem;
+        height: 1.8rem;
+        position: absolute;
+        border-radius: 250%;
+        left: 4%;
+        top: 270%;
+        box-shadow: 0 .3rem .3rem 0 rgb(145, 143, 143);
+        z-index: -1;
+    }
+    
+    #book{
+        margin: 3rem 0 0 0;
+    }
+    
+    #book h2{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 500;
+        letter-spacing: .1rem;
+    }
+    
+    #book .book-contain{
+        display: flex;
+        justify-content: center;
+        margin: 3rem;
+    }
+    
+    #book .book-contain .book-text{
+       margin: auto 3rem;
+    }
+    
+    #book .book-contain .book-text div{
+        background-color: var(--main-color);
+        color: white;
+        width: fit-content;
+        height: fit-content;
+        align-items: center;
+        padding: .6rem;
+        border: transparent;
+        border-radius: .9rem;
+        margin: 0 0 .3rem 0;
+        font-size: 1rem;
+    }
+    
+    #book .book-contain .book-text h3{
+        font-size: 1.4rem;
+        letter-spacing: .1rem;
+    }
+    
+    #book .book-contain .book-text p{
+        width: 23rem;
+        margin: .4rem 0;
+        font-size: 1rem;
+    }
+    
+    #book .book-contain .book-img img{
+        width: 460px;
+        height: 460px;
+    }
+    
+    #book .book-contain .book-img1 img{
+        width: 460px;
+        height: 460px;
+    }
+    
+    footer{
+        background-image: url(./images/dotted-world-map-black.avif);
+        background-size: cover;
+        color: rgb(225, 224, 224);
+        padding: 5rem 0 1.5rem 0;
+    }
+    
+    footer .foot h2{
+        text-align: center;
+        padding: 2rem 0 .7rem 0;
+        letter-spacing: .1rem;
+        font-size: 2rem;
+    }
+    
+    footer .foot p{
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    
+    footer .foot-submit{
+        display: flex;
+        background-color: white;
+        align-items: center;
+        justify-content: center;
+        width: 29rem;
+        height: 2.9rem;
+        margin: 4.5rem auto;
+        border: 1px solid transparent;
+        border-radius: 15rem;
+        box-shadow: 0 0 0 .8rem rgba(80, 79, 79, 0.854);
+    }
+    
+    footer .foot-submit input{
+        padding: 0 0 0 .5rem;
+        border: transparent;
+        font-size: .9rem;
+        letter-spacing: .1rem;
+        align-items: center;
+        border-radius: 2rem;
+        width: 7.5rem;
+        height: fit-content;
+    }
+    
+    footer .foot-submit #btn1{
+        background-color: var(--main-color);
+        color: white;
+        padding: .9rem .8rem;
+        border: transparent;
+        border-radius: 3rem;
+        width: 9rem;
+        height: fit-content;
+        font-size: .68rem;
+        letter-spacing: .1rem;
+        font-weight: 600;
+        margin: 0 0 0 12rem;
+    }
+    
+    hr{
+        margin: 18.7rem auto 1.5rem auto;
+        width: 60rem;
+        height: .1px;
+        background-color: rgb(115, 115, 115);
+        border: transparent;
+    }
+    
+    footer .foot-contain{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    footer .logo-foot{
+        display: flex;
+        align-items: center;
+        box-shadow: 0 .3rem .3rem 0 rgb(59, 59, 59);
+    }
+    
+    .foot-social{
+        margin: 0 0 0 4.5rem;
+    }
+    
+    .foot-social i{
+        padding: .5rem;
+        border: 1px solid transparent;
+        border-radius: 1rem;
+        background-color: rgb(58, 56, 56);
+        width: 3rem;
+        text-align: center;
+        margin:  0 .4rem;
+        font-size: 1.1rem;
+    }
+    
+    footer .logo-foot h2{
+        margin: 0 0 0 .6rem;
+        font-size: 1.3rem;
+    }
+    
+    footer .foot-terms a{
+        text-decoration: none;
+        color: white;
+        margin-inline: 1rem;
+        font-size: 1rem;
+    }
+}
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1280px){
+    #nav-bar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        z-index: 2;
+        position: fixed;
+        width: 100%;
+        background: transparent;
+        backdrop-filter: blur(20px);
+    }
+    
+    #nav-bar .logo{
+        display: flex;
+        align-items: center;
+        box-shadow: 0 .3rem .3rem 0 rgb(145, 143, 143);
+    }
+    
+    #nav-bar .logo h2{
+        margin-inline: .5rem;
+        font-size: 1.2rem;
+    }
+    
+    #nav-bar .nav-list{
+        display: flex;
+        align-items: center;
+        margin: 0 11rem 0 0;
+    }
+    
+    #nav-bar .nav-list ul{
+        display: flex;
+        list-style-type: none;
+    }
+    
+    #nav-bar .nav-list a{
+        text-decoration: none;
+        padding-inline: .6rem;
+        color: black;
+        font-size: 1rem;
+    }
+    
+    #nav-bar .nav-list input{
+        padding: .5rem;
+        margin: 0 0 .3rem .7rem;
+        font-size: .8rem;
+        font-weight: 600;
+        color: white;
+        background-color: var(--main-color);
+        border: var(--border);
+        border-radius: var(--border-radius);
+        width: 6rem;
+        box-shadow: 0 .3rem .3rem 0 rgb(198, 198, 198);
+    }
+    
+    #hero{
+        background-color: rgb(227, 236, 241);
+        height: 100vh;
+    }
+    
+    #hero .hero-text{
+        position: relative;
+        top: 40%;
+        left: 10%;
+    }
+    
+    #hero .hero-text h1{
+        font-size: 3rem;
+        font-weight: 500;
+        word-spacing: .5rem;
+    }
+    
+    #hero .hero-text p{
+        font-size: 1rem;
+        margin: .8rem 0;
+    }
+    
+    #hero .hero-submit{
         background-color: rgb(247, 246, 246);
+        width: 23rem;
+        height: fit-content;
+        border-radius: 2rem;
+        box-shadow: 0 .2rem .3rem 0 rgb(152, 151, 151);
+        margin: 1.4rem 0 .9rem 0;
+    }
+    
+    #hero .hero-submit input{
+        font-size: .9rem;
+        font-weight: 500;
+        border: transparent;
+        border-radius: 2rem;
+        width: 7rem;
+    }
+    
+    #hero .hero-submit #btn{
+        background-color: var(--main-color);
+        color: white;
+        font-size: .7rem;
+        font-weight: 600;
+        padding: .8rem .3rem;
+        left: 15%;
+        margin: .1rem 0 .1rem 2rem;
+        border-radius: 2rem;
+        width: 9rem;
+        position: relative;
     }
     
     #hero .black{
@@ -138,7 +1271,7 @@ body{
         position: relative;
         border-radius: 50%;
         left: 65%;
-        top: 10%;
+        top: 9%;
         box-shadow: 0 .3rem .3rem 0 rgb(145, 143, 143);
     }
     
@@ -158,19 +1291,19 @@ body{
     }
     
     #flights h4{
-        font-size: .8rem;
+        font-size: 1.1rem;
         font-weight: 500;
+        margin: .4rem 0 0 0;
     }
 
     #flights a{
         color: #0048ff;
         text-decoration: none;
-        font-size: .6rem;
+        font-size: .71rem;
     }
     
     #flights .flight-list{
         display: flex;
-        /* justify-content: space-between; */
     }
     
     #flights .flight-contain{
@@ -228,7 +1361,7 @@ body{
         align-items: center;
         background-color: #E4E1DE;
         color: var(--main-color);
-        padding: .3rem .5rem;
+        padding: .1rem .8rem;
         width: fit-content;
         border: transparent;
         border-radius: 1rem;
@@ -236,48 +1369,48 @@ body{
     }
     
     #flights .flight-contain .expire img{
-        width: 13px;
-        height: 13px;
+        width: 18px;
+        height: 18px;
     }
     
     #flights .flight-contain .expire1 img{
-        width: 13px;
-        height: 13px;
+        width: 18px;
+        height: 18px;
     }
     
     #flights .flight-contain .expire2 img{
-        width: 13px;
-        height: 13px;
+        width: 18px;
+        height: 18px;
     }
     
     #flights .flight-contain .expire3 img{
-        width: 13px;
-        height: 13px;
+        width: 18px;
+        height: 18px;
     }
     
     #flights .flight-contain .expire h5{
-        font-size: .5rem;
+        font-size: .7rem;
         margin: 0 0 0 .2rem;
     }
     
     #flights .flight-contain .expire1 h5{
-        font-size: .5rem;
+        font-size: .7rem;
         margin: 0 0 0 .2rem;
     }
     
     #flights .flight-contain .expire2 h5{
-        font-size: .5rem;
+        font-size: .7rem;
         margin: 0 0 0 .2rem;
     }
     
     #flights .flight-contain .expire3 h5{
-        font-size: .5rem;
+        font-size: .7rem;
         margin: 0 0 0 .2rem;
     }
     
     #flights .flight-contain img{
-        width: 200px;
-        height: 150px;
+        width: 250px;
+        height: 180px;
     }
     
     #flights .prices{
@@ -288,19 +1421,19 @@ body{
     
     #flights .price{
         display: flex;
-        margin: .2rem 0 0 0;
+        margin: .5rem 0 0 0;
     }
     
     #flights .price p{
         color: var(--main-color);
-        font-size: .6rem;
+        font-size: .8rem;
         font-weight: 400;
     }
     
     #flights .price input{
-        padding: .1rem;
-        width: 2rem;
-        font-size: .5rem;
+        padding: .1rem .4rem;
+        width: 2.5rem;
+        font-size: .64rem;
         font-weight: 400;
         margin: 0 0 0 .2rem;
         border: transparent;
@@ -311,7 +1444,7 @@ body{
     
     #old{
         color: #cbcbcb;
-        font-size: .6rem;
+        font-size: .8rem;
         font-weight: 400;
         text-decoration: line-through;
         margin: .3rem 0 0 0;
@@ -321,23 +1454,23 @@ body{
         width: fit-content;
         height: fit-content;
         padding: .1rem .4rem;
-        margin: 0 0 .2rem 0;
+        margin: .2rem 0 0 0;
         align-items: center;
         background-color: FBFBFB;
         border: 1px solid transparent;
         border-radius: .7rem;
-        font-size: .55rem;
-        font-weight: 500;
+        font-size: .7rem;
+        font-weight: 400;
         box-shadow: 0 .3rem .3rem 0 rgb(217, 216, 216);
     }
     
     #deals{
-        margin: 13rem 0 9rem 0;
+        margin: 10rem 0 9rem 0;
     }
     
     #deals h3{
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         font-weight: 500;
         margin: 0 0 .6rem 0;
         letter-spacing: .1rem;
@@ -359,13 +1492,13 @@ body{
         height: fit-content;
         border: 1px solid transparent;
         border-radius: 1rem;
-        margin: 0 .9rem;
+        margin: .9rem .9rem;
         box-shadow: 0 .3rem .3rem 0 rgb(145, 143, 143);
     }
     
     #deals .deal-contain img{
-        width: 50px;
-        height: 50px;
+        width: 70px;
+        height: 70px;
     }
     
     #deals .deal-text{
@@ -378,13 +1511,13 @@ body{
     
     #deals .deal-text h3{
         margin: .5rem 0 .5rem 0;
-        font-size: 1rem;
+        font-size: 1.2rem;
         font-weight: 500;
     }
     
     #deals .deal-text p{
-        width: 16rem;
-        font-size: .8rem;
+        width: 18rem;
+        font-size: 1rem;
     }
     
     #deals .black{
@@ -409,12 +1542,12 @@ body{
     
     #deals .purple{
         background-color: #3A41F5;
-        width: 1.5rem;
-        height: 1.3rem;
+        width: 2rem;
+        height: 1.8rem;
         position: absolute;
         border-radius: 250%;
-        left: 2%;
-        top: 225%;
+        left: 4%;
+        top: 240%;
         box-shadow: 0 .3rem .3rem 0 rgb(145, 143, 143);
         z-index: -1;
     }
@@ -425,7 +1558,7 @@ body{
     
     #book h2{
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         font-weight: 500;
         letter-spacing: .1rem;
     }
@@ -446,51 +1579,51 @@ body{
         width: fit-content;
         height: fit-content;
         align-items: center;
-        padding: .4rem;
+        padding: .5rem;
         border: transparent;
         border-radius: .6rem;
         margin: 0 0 .3rem 0;
-        font-size: .7rem;
+        font-size: .9rem;
     }
     
     #book .book-contain .book-text h3{
-        font-size: 1rem;
+        font-size: 1.3rem;
         letter-spacing: .1rem;
     }
 
     #book .book-contain .book-text p{
-        width: 19rem;
+        width: 23rem;
         margin: .4rem 0;
-        font-size: .8rem;
+        font-size: 1rem;
     }
     
     #book .book-contain .book-img img{
-        width: 300px;
-        height: 300px;
+        width: 400px;
+        height: 400px;
     }
     
     #book .book-contain .book-img1 img{
-        width: 300px;
-        height: 300px;
+        width: 400px;
+        height: 400px;
     }
     
     footer{
         background-image: url(./images/dotted-world-map-black.avif);
         background-size: cover;
         color: rgb(225, 224, 224);
-        padding: 5rem 0 1.5rem 0;
+        padding: 4rem 0 1.5rem 0;
     }
     
     footer .foot h2{
         text-align: center;
         padding: 2rem 0 .7rem 0;
         letter-spacing: .1rem;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
     
     footer .foot p{
         text-align: center;
-        font-size: .9rem;
+        font-size: 1rem;
     }
     
     footer .foot-submit{
@@ -498,7 +1631,8 @@ body{
         background-color: white;
         align-items: center;
         justify-content: center;
-        width: 26rem;
+        font-size: .8rem;
+        width: 28rem;
         height: 2.6rem;
         margin: 3rem auto;
         border: 1px solid transparent;
@@ -509,10 +1643,10 @@ body{
     footer .foot-submit input{
         padding: 0 0 0 .5rem;
         border: transparent;
-        font-size: .7rem;
+        font-size: .8rem;
         letter-spacing: .1rem;
         align-items: center;
-        border-radius: 2rem;
+        border-radius: 15rem;
         width: 7.2rem;
         height: fit-content;
     }
@@ -523,16 +1657,16 @@ body{
         padding: .7rem .8rem;
         border: transparent;
         border-radius: 3rem;
-        width: 8rem;
+        width: 9rem;
         height: fit-content;
-        font-size: .55rem;
+        font-size: .7rem;
         letter-spacing: .1rem;
         font-weight: 600;
-        margin: 0 0 0 10.3rem;
+        margin: 0 0 0 11.3rem;
     }
     
     hr{
-        margin: 16rem auto 1.5rem auto;
+        margin: 14rem auto 1.5rem auto;
         width: 60rem;
         height: .1px;
         background-color: rgb(115, 115, 115);
@@ -558,7 +1692,7 @@ body{
     .foot-social i{
         padding: .5rem;
         border: 1px solid transparent;
-        border-radius: 1rem;
+        border-radius: 5rem;
         background-color: rgb(58, 56, 56);
         width: 3rem;
         text-align: center;
@@ -568,14 +1702,14 @@ body{
     
     footer .logo-foot h2{
         margin: 0 0 0 .6rem;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
     
     footer .foot-terms a{
         text-decoration: none;
         color: white;
         margin-inline: 1rem;
-        font-size: .8rem;
+        font-size: 1rem;
     }
 }
 

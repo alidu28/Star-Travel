@@ -155,6 +155,8 @@ body{
 
 #flights{
     margin: 4rem 4rem 10rem 8.4rem;
+    position: relative;
+    left: 2%;
 }
 
 #flights h4{
@@ -170,6 +172,7 @@ body{
 
 #flights .flight-list{
     display: flex;
+    flex-wrap: wrap;
     /* justify-content: space-between; */
 }
 
@@ -737,6 +740,7 @@ footer .foot-terms a{
     
     #flights .flight-list{
         display: flex;
+        flex-wrap: wrap;
     }
     
     #flights .flight-contain{
@@ -749,8 +753,8 @@ footer .foot-terms a{
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 255px;
-        height: 190px;
+        width: 230px;
+        height: 170px;
     }
     
     #flights .expire{
@@ -842,8 +846,8 @@ footer .foot-terms a{
     }
     
     #flights .flight-contain img{
-        width: 255px;
-        height: 190px;
+        width: 230px;
+        height: 170px;
     }
     
     #flights .prices{
@@ -898,7 +902,7 @@ footer .foot-terms a{
     }
     
     #deals{
-        margin: 13rem 0 9rem 0;
+        margin: 5rem 5rem 10rem 8.4rem;
     }
     
     #deals h3{
@@ -1031,13 +1035,17 @@ footer .foot-terms a{
     }
     
     #book .book-contain .book-img img{
-        width: 460px;
-        height: 460px;
+        width: 430px;
+        height: 430px; 
+        object-fit: contain;
+        mix-blend-mode: color-burn;
     }
     
     #book .book-contain .book-img1 img{
-        width: 460px;
-        height: 460px;
+        width: 530px;
+        height: 700px;
+        object-fit: contain;
+        mix-blend-mode: color-burn;
     }
     
     footer{
@@ -1167,13 +1175,13 @@ footer .foot-terms a{
     
     #nav-bar .logo h2{
         margin-inline: .5rem;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     
     #nav-bar .nav-list{
         display: flex;
         align-items: center;
-        margin: 0 11rem 0 0;
+        margin: 0 0 0 0;
     }
     
     #nav-bar .nav-list ul{
@@ -1183,15 +1191,15 @@ footer .foot-terms a{
     
     #nav-bar .nav-list a{
         text-decoration: none;
-        padding-inline: .6rem;
+        padding-inline: .5rem;
         color: black;
-        font-size: 1rem;
+        font-size: .8rem;
     }
     
     #nav-bar .nav-list input{
         padding: .5rem;
-        margin: 0 0 .3rem .7rem;
-        font-size: .8rem;
+        margin: 0 0 .3rem .6rem;
+        font-size: .6rem;
         font-weight: 600;
         color: white;
         background-color: var(--main-color);
@@ -1209,31 +1217,31 @@ footer .foot-terms a{
     #hero .hero-text{
         position: relative;
         top: 40%;
-        left: 10%;
+        left: 13%;
     }
     
     #hero .hero-text h1{
-        font-size: 3rem;
+        font-size: 2.4rem;
         font-weight: 500;
         word-spacing: .5rem;
     }
     
     #hero .hero-text p{
-        font-size: 1rem;
+        font-size: .9rem;
         margin: .8rem 0;
     }
     
     #hero .hero-submit{
         background-color: rgb(247, 246, 246);
-        width: 23rem;
+        width: 20rem;
         height: fit-content;
         border-radius: 2rem;
         box-shadow: 0 .2rem .3rem 0 rgb(152, 151, 151);
-        margin: 1.4rem 0 .9rem 0;
+        margin: 1.4rem .3rem .9rem .2rem;
     }
     
     #hero .hero-submit input{
-        font-size: .9rem;
+        font-size: .8rem;
         font-weight: 500;
         border: transparent;
         border-radius: 2rem;
@@ -1243,46 +1251,46 @@ footer .foot-terms a{
     #hero .hero-submit #btn{
         background-color: var(--main-color);
         color: white;
-        font-size: .7rem;
+        font-size: .6rem;
         font-weight: 600;
-        padding: .8rem .3rem;
+        padding: .6rem .3rem;
         left: 15%;
-        margin: .1rem 0 .1rem 2rem;
+        margin: .1rem 0 .1rem 1.5rem;
         border-radius: 2rem;
-        width: 9rem;
+        width: 7rem;
         position: relative;
     }
     
     #hero .black{
         background-color: black;
-        width: 1rem;
-        height: .9rem;
+        width: .8rem;
+        height: .7rem;
         position: relative;
         border-radius: 50%;
         left: 4%;
-        top: 45%;
+        top: 40%;
         box-shadow: 0 .3rem .3rem 0 rgb(145, 143, 143);
     }
     
     #hero .pink{
         background-color: var(--main-color);
-        width: 1.6rem;
-        height: 1.5rem;
+        width: 1.2rem;
+        height: 1.1rem;
         position: relative;
         border-radius: 50%;
         left: 65%;
-        top: 9%;
+        top: 7%;
         box-shadow: 0 .3rem .3rem 0 rgb(145, 143, 143);
     }
     
     #hero .purple{
         background-color: #3A41F5;
-        width: 2.2rem;
-        height: 2rem;
+        width: 1.8rem;
+        height: 1.7rem;
         position: relative;
         border-radius: 50%;
-        left: 82%;
-        bottom: 15%;
+        left: 81%;
+        bottom: 18%;
         box-shadow: 0 .3rem .3rem 0 rgb(145, 143, 143);
     }
     
@@ -1291,7 +1299,7 @@ footer .foot-terms a{
     }
     
     #flights h4{
-        font-size: 1.1rem;
+        font-size: .9rem;
         font-weight: 500;
         margin: .4rem 0 0 0;
     }
@@ -1299,11 +1307,12 @@ footer .foot-terms a{
     #flights a{
         color: #0048ff;
         text-decoration: none;
-        font-size: .71rem;
+        font-size: .7rem;
     }
     
     #flights .flight-list{
         display: flex;
+        flex-wrap: wrap;
     }
     
     #flights .flight-contain{
@@ -1369,48 +1378,48 @@ footer .foot-terms a{
     }
     
     #flights .flight-contain .expire img{
-        width: 18px;
-        height: 18px;
+        width: 13px;
+        height: 13px;
     }
     
     #flights .flight-contain .expire1 img{
-        width: 18px;
-        height: 18px;
+        width: 13px;
+        height: 13px;
     }
     
     #flights .flight-contain .expire2 img{
-        width: 18px;
-        height: 18px;
+        width: 13px;
+        height: 13px;
     }
     
     #flights .flight-contain .expire3 img{
-        width: 18px;
-        height: 18px;
+        width: 13px;
+        height: 13px;
     }
     
     #flights .flight-contain .expire h5{
-        font-size: .7rem;
+        font-size: .6rem;
         margin: 0 0 0 .2rem;
     }
     
     #flights .flight-contain .expire1 h5{
-        font-size: .7rem;
+        font-size: .6rem;
         margin: 0 0 0 .2rem;
     }
     
     #flights .flight-contain .expire2 h5{
-        font-size: .7rem;
+        font-size: .6rem;
         margin: 0 0 0 .2rem;
     }
     
     #flights .flight-contain .expire3 h5{
-        font-size: .7rem;
+        font-size: .6rem;
         margin: 0 0 0 .2rem;
     }
     
     #flights .flight-contain img{
-        width: 250px;
-        height: 180px;
+        width: 180px;
+        height: 140px;
     }
     
     #flights .prices{
@@ -1426,14 +1435,14 @@ footer .foot-terms a{
     
     #flights .price p{
         color: var(--main-color);
-        font-size: .8rem;
+        font-size: .7rem;
         font-weight: 400;
     }
     
     #flights .price input{
         padding: .1rem .4rem;
-        width: 2.5rem;
-        font-size: .64rem;
+        width: 2.2rem;
+        font-size: .6rem;
         font-weight: 400;
         margin: 0 0 0 .2rem;
         border: transparent;
@@ -1444,7 +1453,7 @@ footer .foot-terms a{
     
     #old{
         color: #cbcbcb;
-        font-size: .8rem;
+        font-size: .7rem;
         font-weight: 400;
         text-decoration: line-through;
         margin: .3rem 0 0 0;
@@ -1459,7 +1468,7 @@ footer .foot-terms a{
         background-color: FBFBFB;
         border: 1px solid transparent;
         border-radius: .7rem;
-        font-size: .7rem;
+        font-size: .63rem;
         font-weight: 400;
         box-shadow: 0 .3rem .3rem 0 rgb(217, 216, 216);
     }
@@ -1470,7 +1479,7 @@ footer .foot-terms a{
     
     #deals h3{
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         font-weight: 500;
         margin: 0 0 .6rem 0;
         letter-spacing: .1rem;
@@ -1478,27 +1487,28 @@ footer .foot-terms a{
     
     #deals .deals{
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        margin: 1.5rem 0;
+        margin: 1rem 0;
        
     }
     
     #deals .deal-contain{
         display: flex;
-        padding: 2rem;
+        padding: 1.7rem;
         align-items: center;
         background-color: rgb(240, 240, 240);
         width: fit-content;
         height: fit-content;
         border: 1px solid transparent;
         border-radius: 1rem;
-        margin: .9rem .9rem;
+        margin: .5rem .8rem;
         box-shadow: 0 .3rem .3rem 0 rgb(145, 143, 143);
     }
     
     #deals .deal-contain img{
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
     }
     
     #deals .deal-text{
@@ -1510,14 +1520,14 @@ footer .foot-terms a{
     }
     
     #deals .deal-text h3{
-        margin: .5rem 0 .5rem 0;
-        font-size: 1.2rem;
+        margin: .3rem 0 .5rem 0;
+        font-size: 1.1rem;
         font-weight: 500;
     }
     
     #deals .deal-text p{
-        width: 18rem;
-        font-size: 1rem;
+        width: 17rem;
+        font-size: .9rem;
     }
     
     #deals .black{
@@ -1542,11 +1552,11 @@ footer .foot-terms a{
     
     #deals .purple{
         background-color: #3A41F5;
-        width: 2rem;
-        height: 1.8rem;
+        width: 1.7rem;
+        height: 1.6rem;
         position: absolute;
         border-radius: 250%;
-        left: 4%;
+        left: 1%;
         top: 240%;
         box-shadow: 0 .3rem .3rem 0 rgb(145, 143, 143);
         z-index: -1;
@@ -1558,7 +1568,7 @@ footer .foot-terms a{
     
     #book h2{
         text-align: center;
-        font-size: 1.6rem;
+        font-size: 1.3rem;
         font-weight: 500;
         letter-spacing: .1rem;
     }
@@ -1579,32 +1589,32 @@ footer .foot-terms a{
         width: fit-content;
         height: fit-content;
         align-items: center;
-        padding: .5rem;
+        padding: .4rem;
         border: transparent;
-        border-radius: .6rem;
-        margin: 0 0 .3rem 0;
-        font-size: .9rem;
+        border-radius: .5rem;
+        margin: 0 0 .5rem 0;
+        font-size: .8rem;
     }
     
     #book .book-contain .book-text h3{
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         letter-spacing: .1rem;
     }
 
     #book .book-contain .book-text p{
-        width: 23rem;
+        width: 21rem;
         margin: .4rem 0;
-        font-size: 1rem;
+        font-size: .9rem;
     }
     
     #book .book-contain .book-img img{
-        width: 400px;
-        height: 400px;
+        width: 380px;
+        height: 350px;
     }
     
     #book .book-contain .book-img1 img{
-        width: 400px;
-        height: 400px;
+        width: 380px;
+        height: 350px;
     }
     
     footer{
@@ -1618,12 +1628,12 @@ footer .foot-terms a{
         text-align: center;
         padding: 2rem 0 .7rem 0;
         letter-spacing: .1rem;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     
     footer .foot p{
         text-align: center;
-        font-size: 1rem;
+        font-size: .9rem;
     }
     
     footer .foot-submit{
@@ -1633,7 +1643,7 @@ footer .foot-terms a{
         justify-content: center;
         font-size: .8rem;
         width: 28rem;
-        height: 2.6rem;
+        height: 2.4rem;
         margin: 3rem auto;
         border: 1px solid transparent;
         border-radius: 15rem;
@@ -1643,7 +1653,7 @@ footer .foot-terms a{
     footer .foot-submit input{
         padding: 0 0 0 .5rem;
         border: transparent;
-        font-size: .8rem;
+        font-size: .7rem;
         letter-spacing: .1rem;
         align-items: center;
         border-radius: 15rem;
@@ -1659,7 +1669,7 @@ footer .foot-terms a{
         border-radius: 3rem;
         width: 9rem;
         height: fit-content;
-        font-size: .7rem;
+        font-size: .6rem;
         letter-spacing: .1rem;
         font-weight: 600;
         margin: 0 0 0 11.3rem;
@@ -1702,14 +1712,14 @@ footer .foot-terms a{
     
     footer .logo-foot h2{
         margin: 0 0 0 .6rem;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
     
     footer .foot-terms a{
         text-decoration: none;
         color: white;
         margin-inline: 1rem;
-        font-size: 1rem;
+        font-size: .9rem;
     }
 }
 
